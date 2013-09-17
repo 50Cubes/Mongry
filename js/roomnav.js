@@ -163,7 +163,7 @@ function drawWalls(room){
 				ctx.save();
 				ctx.translate(room.doors[key].x, room.doors[key].y);
 				ctx.rotate(rot);
-				ctx.scale(0.7);
+				ctx.scale(0.7, 0.7);
 				if(room.doors[key].doorParent == '-1'){
 					ctx.drawImage(golddoor,  x, y);
 				}else{
